@@ -1,0 +1,1314 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>深圳出发 · 景德镇三晚两日半路线 · 第二版（新增拍照打卡指南）</title>
+  <style>
+    :root {
+      --ink: #22312f;
+      --muted: #66756f;
+      --paper: #fffaf0;
+      --porcelain: #f7fbff;
+      --blue: #1f5f99;
+      --blue-deep: #123e66;
+      --clay: #b86b42;
+      --tea: #627f4b;
+      --rose: #b55b62;
+      --gold: #b8862e;
+      --line: rgba(34, 49, 47, 0.14);
+      --shadow: 0 18px 46px rgba(28, 42, 38, 0.13);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 12% 0%, rgba(31, 95, 153, 0.16), transparent 27rem),
+        radial-gradient(circle at 88% 8%, rgba(184, 107, 66, 0.15), transparent 24rem),
+        linear-gradient(180deg, #f7fbff 0%, #fffaf0 52%, #f3efe5 100%);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(31, 95, 153, 0.28);
+    }
+
+    a:hover { color: var(--blue-deep); border-color: currentColor; }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      margin: 24px auto 26px;
+      padding: 54px;
+      border: 1px solid rgba(31, 95, 153, 0.18);
+      border-radius: 36px;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(255, 250, 240, 0.92)),
+        repeating-linear-gradient(45deg, rgba(31, 95, 153, 0.045) 0 1px, transparent 1px 22px);
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "瓷";
+      position: absolute;
+      right: 28px;
+      bottom: -88px;
+      color: rgba(31, 95, 153, 0.08);
+      font-size: clamp(180px, 25vw, 340px);
+      font-weight: 900;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin: 0 0 16px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: var(--blue-deep);
+      background: rgba(31, 95, 153, 0.1);
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+
+    h1 {
+      max-width: 880px;
+      margin: 0;
+      font-size: clamp(2.25rem, 6.4vw, 5.2rem);
+      line-height: 1.04;
+      letter-spacing: -0.06em;
+    }
+
+    .hero p {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+      margin: 22px 0 0;
+      color: #41504d;
+      font-size: clamp(1.05rem, 2.1vw, 1.25rem);
+    }
+
+    .hero .tech-badge {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      margin-top: 18px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(184, 134, 46, 0.14);
+      color: #7a5d1d;
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .quick {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .quick-card, .card {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: 0 12px 30px rgba(28, 42, 38, 0.08);
+    }
+
+    .quick-card {
+      padding: 17px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .quick-card strong {
+      display: block;
+      color: var(--blue-deep);
+      font-size: 1.05rem;
+    }
+
+    .quick-card span {
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      margin: 0 auto 32px;
+      padding: 10px;
+      border: 1px solid rgba(34, 49, 47, 0.12);
+      border-radius: 999px;
+      background: rgba(255, 250, 240, 0.88);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 10px 28px rgba(28, 42, 38, 0.1);
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .nav a {
+      display: inline-block;
+      margin: 0 3px;
+      padding: 8px 14px;
+      border: 0;
+      border-radius: 999px;
+      color: var(--ink);
+      font-size: 0.94rem;
+      font-weight: 800;
+    }
+
+    .nav a:hover { background: rgba(31, 95, 153, 0.1); }
+    section { margin: 34px 0; }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 20px;
+      align-items: end;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.7rem, 3vw, 2.55rem);
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+    }
+
+    .hint { margin: 6px 0 0; color: var(--muted); }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      color: var(--blue-deep);
+      background: rgba(31, 95, 153, 0.1);
+      font-size: 0.84rem;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .pill.clay { color: #743f26; background: rgba(184, 107, 66, 0.14); }
+    .pill.tea { color: #405a2f; background: rgba(97, 123, 77, 0.14); }
+    .pill.free { color: #21533c; background: rgba(53, 137, 92, 0.14); }
+    .pill.warn { color: #7d3a40; background: rgba(181, 91, 98, 0.14); }
+    .pill.gold { color: #7a5d1d; background: rgba(184, 134, 46, 0.14); }
+    .pill.photo { color: #1f5f99; background: rgba(31, 95, 153, 0.10); }
+
+    .grid { display: grid; gap: 18px; }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+    .card {
+      padding: 22px;
+      border-radius: var(--radius);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.22rem;
+      line-height: 1.32;
+    }
+
+    .card p { margin: 0; color: #4a5855; }
+    .card ul { margin: 8px 0 0; padding-left: 20px; }
+    .card li { margin: 0 0 8px; }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .route-day {
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 18px;
+      margin-bottom: 18px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.76);
+      box-shadow: 0 14px 36px rgba(28, 42, 38, 0.08);
+      overflow: hidden;
+    }
+
+    .day-label {
+      padding: 26px 22px;
+      color: white;
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.24), transparent 12rem),
+        linear-gradient(160deg, var(--blue-deep), var(--blue));
+    }
+
+    .route-day:nth-of-type(2) .day-label {
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.22), transparent 12rem),
+        linear-gradient(160deg, #7b4429, var(--clay));
+    }
+
+    .route-day:nth-of-type(3) .day-label {
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.22), transparent 12rem),
+        linear-gradient(160deg, #405a2f, var(--tea));
+    }
+
+    .route-day:nth-of-type(4) .day-label {
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.22), transparent 12rem),
+        linear-gradient(160deg, #7d3a40, var(--rose));
+    }
+
+    .day-label .date {
+      display: block;
+      font-size: 0.86rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    .day-label strong {
+      display: block;
+      margin-top: 10px;
+      font-size: 1.65rem;
+      line-height: 1.18;
+      letter-spacing: -0.04em;
+    }
+
+    .day-label p {
+      margin: 12px 0 0;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.94rem;
+    }
+
+    .timeline {
+      position: relative;
+      padding: 24px 24px 24px 34px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 34px;
+      bottom: 34px;
+      left: 18px;
+      width: 2px;
+      background: linear-gradient(var(--blue), rgba(31, 95, 153, 0.08));
+    }
+
+    .stop {
+      position: relative;
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 14px;
+      padding: 0 0 22px;
+    }
+
+    .stop:last-child { padding-bottom: 0; }
+
+    .stop::before {
+      content: "";
+      position: absolute;
+      left: -23px;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      border: 3px solid white;
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 0 0 2px rgba(31, 95, 153, 0.26);
+    }
+
+    .time {
+      color: var(--blue-deep);
+      font-weight: 900;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .stop h3 {
+      margin: 0 0 4px;
+      font-size: 1.08rem;
+    }
+
+    .stop p { margin: 0; color: #4b5a56; }
+
+    .note {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-left: 4px solid var(--clay);
+      border-radius: 14px;
+      color: #5a4336;
+      background: rgba(184, 107, 66, 0.1);
+      font-size: 0.94rem;
+    }
+
+    .photo-tip {
+      margin-top: 10px;
+      padding: 10px 14px;
+      border-left: 4px solid var(--gold);
+      border-radius: 14px;
+      color: #5a4a25;
+      background: rgba(184, 134, 46, 0.08);
+      font-size: 0.92rem;
+    }
+
+    .photo-tip strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #7a5d1d;
+      font-size: 0.86rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* ── 拍照打卡专用样式 ── */
+
+    .spot-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .spot-card {
+      display: grid;
+      grid-template-columns: 200px minmax(0, 1fr);
+      gap: 0;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.74);
+      box-shadow: 0 12px 32px rgba(28, 42, 38, 0.07);
+      overflow: hidden;
+    }
+
+    .spot-sidebar {
+      padding: 20px 18px;
+      background:
+        radial-gradient(circle at top right, rgba(184, 134, 46, 0.10), transparent 14rem),
+        linear-gradient(150deg, rgba(31, 95, 153, 0.06), rgba(255, 250, 240, 0.5));
+    }
+
+    .spot-sidebar h3 {
+      margin: 0 0 6px;
+      font-size: 1.15rem;
+    }
+
+    .spot-body {
+      padding: 20px 22px;
+    }
+
+    .spot-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .spot-list li {
+      position: relative;
+      margin-bottom: 18px;
+      padding-left: 22px;
+    }
+
+    .spot-list li:last-child { margin-bottom: 0; }
+
+    .spot-list li::before {
+      content: "●";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold);
+      font-size: 0.78rem;
+    }
+
+    .spot-list li .spot-name {
+      font-weight: 900;
+      color: var(--ink);
+    }
+
+    .spot-list li .spot-desc {
+      display: block;
+      color: #4b5a56;
+      font-size: 0.94rem;
+      margin: 2px 0 4px;
+    }
+
+    .spot-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .spot-meta .pill {
+      font-size: 0.78rem;
+      min-height: auto;
+      padding: 3px 8px;
+    }
+
+    /* ── 表格 ── */
+
+    .matrix { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 22px; background: rgba(255, 255, 255, 0.78); box-shadow: 0 12px 32px rgba(28, 42, 38, 0.08); }
+
+    .matrix th, .matrix td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+
+    .matrix th { color: var(--blue-deep); background: rgba(31, 95, 153, 0.08); font-size: 0.9rem; }
+
+    .matrix tr:last-child td { border-bottom: 0; }
+    .matrix td:first-child { min-width: 150px; font-weight: 900; }
+
+    .phrase {
+      padding: 16px;
+      border-radius: 18px;
+      background: #fff7e8;
+      border: 1px dashed rgba(184, 107, 66, 0.36);
+      font-weight: 800;
+    }
+
+    .source-list { margin: 0; padding-left: 20px; color: #4b5a56; }
+    .source-list li { margin-bottom: 8px; }
+
+    footer {
+      margin: 40px 0 28px;
+      padding: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 880px) {
+      .hero { padding: 34px 24px; }
+      .quick, .grid.two, .grid.three { grid-template-columns: 1fr; }
+      .section-head { grid-template-columns: 1fr; }
+      .route-day { grid-template-columns: 1fr; }
+      .day-label { padding: 22px; }
+      .timeline { padding-left: 32px; }
+      .stop { grid-template-columns: 76px minmax(0, 1fr); }
+      .spot-card { grid-template-columns: 1fr; }
+      .spot-sidebar { padding: 18px 18px 8px; }
+      .matrix { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">深圳北出发 · 两对情侣 · 广东胃友好</div>
+      <h1>景德镇三晚两日半：拍照打卡版</h1>
+      <p>在原有路线基础上，新增每个景点的拍照打卡点位、最佳光线时间与构图指南。第二版不想让你只是"去过"——想让你带着好看的照片回来。</p>
+      <span class="tech-badge">第二版 · 新增拍照打卡指南</span>
+      <div class="quick">
+        <div class="quick-card"><strong>到达</strong><span>公开时刻显示 G1410 常见为深圳北 16:18 → 景德镇北 21:13；以 12306 为准。</span></div>
+        <div class="quick-card"><strong>返程</strong><span>按 6/21 周日 13:00 左右发车处理，建议 12:05–12:15 到景德镇北。</span></div>
+        <div class="quick-card"><strong>住宿</strong><span>首选陶溪川附近，两间房同酒店；别住三宝/瑶里，返程不方便。</span></div>
+        <div class="quick-card"><strong>饮食</strong><span>全程默认"不辣/少油/辣椒另放"。</span></div>
+      </div>
+    </header>
+
+    <nav class="nav" aria-label="页面导航">
+      <a href="#stay">住哪里</a>
+      <a href="#photo-guide">拍照打卡</a>
+      <a href="#route">按日期路线</a>
+      <a href="#choice">远郊取舍</a>
+      <a href="#matrix">景点红黑榜</a>
+      <a href="#food">广东胃吃法</a>
+      <a href="#booking">预约免费</a>
+      <a href="#ebike">电驴范围</a>
+      <a href="#sources">来源</a>
+    </nav>
+
+    <section id="stay">
+      <div class="section-head">
+        <div><h2>住哪里最适合你们</h2><p class="hint">你们晚到、周日午间返程，住宿要为交通服务，别为了民宿氛围把自己扔进远郊。</p></div>
+        <span class="pill">推荐：陶溪川附近</span>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <h3>首选：陶溪川文创街区附近</h3>
+          <p>两对情侣订同酒店两间房最稳。周五/周六晚上能逛市集，去雕塑瓷厂、三宝、陶阳里、北站都方便。</p>
+          <div class="tags"><span class="pill free">夜游方便</span><span class="pill">打车容易</span><span class="pill clay">最省心</span></div>
+        </article>
+        <article class="card">
+          <h3>备选：人民广场 / 陶阳里</h3>
+          <p>老城烟火气更浓，去御窑和抚州弄近。缺点是晚上从陶溪川回酒店要打车，周末可能小堵。</p>
+          <div class="tags"><span class="pill tea">老城感</span><span class="pill">适合夜拍</span></div>
+        </article>
+        <article class="card">
+          <h3>不建议：三宝村 / 瑶里民宿</h3>
+          <p>这次只有两个完整白天，且周日 13:00 返程。住远郊会牺牲市集、博物馆和睡眠，浪漫但不划算。</p>
+          <div class="tags"><span class="pill warn">不推荐</span><span class="pill clay">交通成本高</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ════ 拍照打卡全指南 ════ -->
+    <section id="photo-guide">
+      <div class="section-head">
+        <div>
+          <h2>拍照打卡全指南</h2>
+          <p class="hint">每个景点的最佳机位、光线与构图，按你们这次能去的优先级排列。"必去"指路线里已经安排的，"备选"是远郊加塞才考虑。</p>
+        </div>
+        <span class="pill gold">新增 · 第二版</span>
+      </div>
+
+      <div class="spot-grid">
+
+        <!-- 陶瓷博物馆 -->
+        <div class="spot-card">
+          <div class="spot-sidebar">
+            <h3>中国陶瓷博物馆</h3>
+            <div class="tags" style="margin-top: 8px;">
+              <span class="pill free">必去</span>
+              <span class="pill photo">室内</span>
+              <span class="pill">出片：★★★★★</span>
+            </div>
+            <p style="margin-top: 12px; color: #4b5a56; font-size: 0.92rem;">全馆冷气足，建议上午第一批进场逆人流先冲顶层。</p>
+          </div>
+          <div class="spot-body">
+            <ul class="spot-list">
+              <li>
+                <span class="spot-name">📷 "无语佛"（沉思罗汉）</span>
+                <span class="spot-desc">6 楼常设展厅结尾处排队最长。开馆先上 6 楼拍完再慢慢往下逛。手机用人像模式避开围观人群，相机用 50mm 以上拍面部特写。</span>
+                <div class="spot-meta">
+                  <span class="pill">排队约 10–30 分钟</span>
+                  <span class="pill photo">人像模式</span>
+                  <span class="pill gold">必拍 No.1</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 旋转楼梯 / 中央阶梯</span>
+                <span class="spot-desc">中庭旋转楼梯线条极好，底层仰拍拍出螺旋感，顶层俯拍拍人物站在楼梯上的构图。上午光线从顶部玻璃洒入层次最佳。</span>
+                <div class="spot-meta">
+                  <span class="pill">广角/超广角</span>
+                  <span class="pill photo">10:00–11:00</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 各朝代陶瓷阵列墙</span>
+                <span class="spot-desc">展厅内同类型瓷器排列的大展柜，退后几步用广角对称构图，把多个朝代的代表作收进一张画面。</span>
+                <div class="spot-meta">
+                  <span class="pill">对称构图</span>
+                  <span class="pill free">人多时贴柜拍</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 御窑 -->
+        <div class="spot-card">
+          <div class="spot-sidebar">
+            <h3>御窑博物院 + 陶阳里</h3>
+            <div class="tags" style="margin-top: 8px;">
+              <span class="pill">必去</span>
+              <span class="pill photo">建筑 & 人像</span>
+              <span class="pill">出片：★★★★★</span>
+            </div>
+            <p style="margin-top: 12px; color: #4b5a56; font-size: 0.92rem;">御窑是整个行程最出片的地方，建议把下午光线最好的 2 小时留在这里。</p>
+          </div>
+          <div class="spot-body">
+            <ul class="spot-list">
+              <li>
+                <span class="spot-name">📷 红砖拱券建筑（御窑标志）</span>
+                <span class="spot-desc">人物站在拱券下方或穿过拱门回头看，摄影师在另一侧拍剪影。下午 4:00–5:00 光线斜射，影子拉满地面。</span>
+                <div class="spot-meta">
+                  <span class="pill gold">御窑 No.1 机位</span>
+                  <span class="pill photo">16:00–17:00</span>
+                  <span class="pill">逆光/剪影</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 龙珠阁 + 水池倒影</span>
+                <span class="spot-desc">日落前后金色时刻拍建筑与倒影的对称构图。蓝调时刻天空深蓝、建筑暖灯亮起更出片。</span>
+                <div class="spot-meta">
+                  <span class="pill photo">日落前后</span>
+                  <span class="pill">对称/倒影</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 博物馆浅水池拍倒影</span>
+                <span class="spot-desc">傍晚静风时水面如镜。用低角度贴水面拍，建筑 + 倒影同框，人物在拱内做对称。</span>
+                <div class="spot-meta">
+                  <span class="pill">低角度</span>
+                  <span class="pill photo">傍晚蓝调</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 陶阳里老城小巷</span>
+                <span class="spot-desc">青石板路、斑驳砖墙、竹制晾衣杆。适合扫街风格的抓拍，人物侧身走在巷子里利用纵深感。</span>
+                <div class="spot-meta">
+                  <span class="pill">街拍</span>
+                  <span class="pill tea">适合胶片滤镜</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 陶溪川 -->
+        <div class="spot-card">
+          <div class="spot-sidebar">
+            <h3>陶溪川文创街区</h3>
+            <div class="tags" style="margin-top: 8px;">
+              <span class="pill free">必去</span>
+              <span class="pill photo">夜景</span>
+              <span class="pill">出片：★★★★☆</span>
+            </div>
+            <p style="margin-top: 12px; color: #4b5a56; font-size: 0.92rem;">夜游拍照为主，红砖老厂房 + 暖光灯光 + 水道倒影。</p>
+          </div>
+          <div class="spot-body">
+            <ul class="spot-list">
+              <li>
+                <span class="spot-name">📷 红砖烟囱 + 老厂房</span>
+                <span class="spot-desc">人物站在红砖墙前，用广角带上烟囱和暖黄灯光。傍晚灯光刚亮时天空还有蓝色，是最好看的 15 分钟。</span>
+                <div class="spot-meta">
+                  <span class="pill photo">日落前后</span>
+                  <span class="pill">广角</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 水道倒影 / 亲水步道</span>
+                <span class="spot-desc">园区内水道两边灯光倒影。蹲低拍水面反射，情侣可以站在水边石阶上被拍侧面剪影。</span>
+                <div class="spot-meta">
+                  <span class="pill">夜晚</span>
+                  <span class="pill photo">手持夜景</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 创意集市摊位前</span>
+                <span class="spot-desc">暖色灯泡 + 摊主手作氛围好。俯拍摊位全貌，或者特写摊主正在修坯的手部。</span>
+                <div class="spot-meta">
+                  <span class="pill free">市集氛围</span>
+                  <span class="pill">特写</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 乐天 + 雕塑瓷厂 -->
+        <div class="spot-card">
+          <div class="spot-sidebar">
+            <h3>乐天市集 + 雕塑瓷厂</h3>
+            <div class="tags" style="margin-top: 8px;">
+              <span class="pill clay">必去</span>
+              <span class="pill photo">人文</span>
+              <span class="pill">出片：★★★★☆</span>
+            </div>
+            <p style="margin-top: 12px; color: #4b5a56; font-size: 0.92rem;">周六上午限定，市集 + 老厂区很耐拍。</p>
+          </div>
+          <div class="spot-body">
+            <ul class="spot-list">
+              <li>
+                <span class="spot-name">📷 市集人潮俯拍</span>
+                <span class="spot-desc">找二楼露台或台阶高处，俯拍市集摊位顶棚和人流交错。上午 9:30–10:30 光线柔和。</span>
+                <div class="spot-meta">
+                  <span class="pill photo">09:30–10:30</span>
+                  <span class="pill">俯拍</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 摊主 + 手作特写</span>
+                <span class="spot-desc">蹲下来和摊主平视，用长焦拍摊主正在修坯/上釉的手。先问再拍。</span>
+                <div class="spot-meta">
+                  <span class="pill gold">人文感</span>
+                  <span class="pill">长焦/特写</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 老墙 / 瓷片墙 / 蓝白瓷招牌</span>
+                <span class="spot-desc">老厂区墙面嵌满瓷片和陶罐，天然纹理背景。拍半身人像或情侣合照，色彩丰富。</span>
+                <div class="spot-meta">
+                  <span class="pill">人像背景</span>
+                  <span class="pill tea">复古色调</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 三宝村 -->
+        <div class="spot-card">
+          <div class="spot-sidebar">
+            <h3>三宝村</h3>
+            <div class="tags" style="margin-top: 8px;">
+              <span class="pill tea">推荐</span>
+              <span class="pill photo">自然</span>
+              <span class="pill">出片：★★★★★</span>
+            </div>
+            <p style="margin-top: 12px; color: #4b5a56; font-size: 0.92rem;">山、溪、陶艺、工作室 —— 非常出片的半日慢逛路线。</p>
+          </div>
+          <div class="spot-body">
+            <ul class="spot-list">
+              <li>
+                <span class="spot-name">📷 三宝美术馆外墙（藤蔓老窑砖）</span>
+                <span class="spot-desc">美术馆外墙爬满藤蔓的老窑砖，雨后颜色更深。人物站在门口或墙边用 50mm 拍半身。</span>
+                <div class="spot-meta">
+                  <span class="pill gold">三宝标志</span>
+                  <span class="pill photo">阴天也很出片</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 溪边石桥 / 水坝</span>
+                <span class="spot-desc">人物站在石桥上或在溪边踱步，慢速快门把流水拍成雾状（手机用丝绢流水模式）。</span>
+                <div class="spot-meta">
+                  <span class="pill">慢门/丝绢流水</span>
+                  <span class="pill photo">下午光线</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 陶罐墙 / 陶片护栏</span>
+                <span class="spot-desc">村路沿途墙面镶嵌碎瓷片和陶罐。找一段完整的陶罐墙做背景拍全身照。</span>
+                <div class="spot-meta">
+                  <span class="pill">全景/中景</span>
+                  <span class="pill free">随处可拍</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 工作室门口 / 露天工作台</span>
+                <span class="spot-desc">开放式工作室门口常摆着陶坯架和操作台，适合拍"工作室氛围"照。先打招呼再拍。</span>
+                <div class="spot-meta">
+                  <span class="pill">氛围</span>
+                  <span class="pill">注意礼貌</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 古窑 -->
+        <div class="spot-card">
+          <div class="spot-sidebar">
+            <h3>古窑民俗博览区</h3>
+            <div class="tags" style="margin-top: 8px;">
+              <span class="pill clay">周日可补</span>
+              <span class="pill photo">非遗</span>
+              <span class="pill">出片：★★★☆☆</span>
+            </div>
+            <p style="margin-top: 12px; color: #4b5a56; font-size: 0.92rem;">传统制瓷工艺展示，以纪实和人文拍摄为主。</p>
+          </div>
+          <div class="spot-body">
+            <ul class="spot-list">
+              <li>
+                <span class="spot-name">📷 非遗传承人拉坯/修坯</span>
+                <span class="spot-desc">抓拍老师与泥坯的互动瞬间，用连拍模式。不要开闪光灯。</span>
+                <div class="spot-meta">
+                  <span class="pill gold">人文必拍</span>
+                  <span class="pill photo">连拍/抓拍</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 古窑炉内部</span>
+                <span class="spot-desc">窑炉内部光影有纵深感。逆光拍窑炉口的光束效果，调整曝光补偿让暗部有细节。</span>
+                <div class="spot-meta">
+                  <span class="pill">逆光</span>
+                  <span class="pill">HDR/曝光补偿</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 半成品晾晒架</span>
+                <span class="spot-desc">露天排列的素坯很有韵律感。用长焦压缩画面让坯体排列更密。</span>
+                <div class="spot-meta">
+                  <span class="pill">长焦</span>
+                  <span class="pill free">零等候</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 陶阳新村 / 九集 -->
+        <div class="spot-card">
+          <div class="spot-sidebar">
+            <h3>陶阳新村 / 九集小镇</h3>
+            <div class="tags" style="margin-top: 8px;">
+              <span class="pill clay">夜可选</span>
+              <span class="pill photo">夜市</span>
+              <span class="pill">出片：★★★☆☆</span>
+            </div>
+            <p style="margin-top: 12px; color: #4b5a56; font-size: 0.92rem;">烟火气夜市，适合快拍和随走随拍。</p>
+          </div>
+          <div class="spot-body">
+            <ul class="spot-list">
+              <li>
+                <span class="spot-name">📷 夜市摊位暖光全景</span>
+                <span class="spot-desc">灯笼、暖黄灯泡、地摊上成排的瓷器。广角拍摊位纵深或蹲低拍地面瓷器 + 人流虚化。</span>
+                <div class="spot-meta">
+                  <span class="pill">夜间手持</span>
+                  <span class="pill photo">暖色调</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 地摊瓷器特写</span>
+                <span class="spot-desc">成排的杯子、小碗俯拍有阵列感。贴平拍摄，焦点对在前面的器物上。</span>
+                <div class="spot-meta">
+                  <span class="pill">微距</span>
+                  <span class="pill free">好构图</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 远郊备选 -->
+        <div class="spot-card" style="opacity: 0.85;">
+          <div class="spot-sidebar">
+            <h3>远郊备选（有空再去）</h3>
+            <div class="tags" style="margin-top: 8px;">
+              <span class="pill warn">这次不一定去</span>
+              <span class="pill photo">备选</span>
+            </div>
+            <p style="margin-top: 12px; color: #4b5a56; font-size: 0.92rem;">如果你们改走远郊线，这些机位值得专门去找。</p>
+          </div>
+          <div class="spot-body">
+            <ul class="spot-list">
+              <li>
+                <span class="spot-name">📷 瓷宫外墙 / 穹顶</span>
+                <span class="spot-desc">外墙五彩瓷片拼贴，穿纯色衣服拍全身。内部仰拍穹顶拼花，利用门洞做框架构图。</span>
+                <div class="spot-meta">
+                  <span class="pill">纯色穿搭</span>
+                  <span class="pill photo">仰拍</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 寒溪村 · 大地之灯</span>
+                <span class="spot-desc">白色装置立在茶山顶上，从远处山坡俯拍茶垄 + 装置组合。人物站在下方做小点更显空间感。</span>
+                <div class="spot-meta">
+                  <span class="pill gold">远郊 No.1</span>
+                  <span class="pill photo">夕阳</span>
+                </div>
+              </li>
+              <li>
+                <span class="spot-name">📷 瑶里古镇 · 廊桥 / 水边</span>
+                <span class="spot-desc">廊桥倒影、白墙黛瓦、清晨薄雾。建议 8:00 前到避开游客。</span>
+                <div class="spot-meta">
+                  <span class="pill">清晨</span>
+                  <span class="pill photo">倒影对称</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 拍照速查横幅 -->
+      <div class="card" style="margin-top: 18px; background: rgba(184, 134, 46, 0.06); border: 1px solid rgba(184, 134, 46, 0.25);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;">
+          <div>
+            <strong style="color: #7a5d1d;">📸 出片三件套带齐</strong>
+            <p style="font-size: 0.92rem; margin-top: 4px;">手机（主摄 + 超广角）、充电宝、纸巾（擦汗擦手）。相机建议带一支 24–70mm 或 35mm 定焦。</p>
+          </div>
+          <div>
+            <strong style="color: #7a5d1d;">👔 穿搭色系建议</strong>
+            <p style="font-size: 0.92rem; margin-top: 4px;">白色、浅米色、靛蓝最佳。避开大红大绿，瓷器和建筑颜色已经很丰富，衣服做减法。</p>
+          </div>
+          <div>
+            <strong style="color: #7a5d1d;">⏰ 黄金光线窗口</strong>
+            <p style="font-size: 0.92rem; margin-top: 4px;">博物馆靠展柜灯光（全天均匀），户外靠 16:00–17:30（金蓝时段）。中午 11:30–14:00 安排吃饭或室内。</p>
+          </div>
+          <div>
+            <strong style="color: #7a5d1d;">📱 手机小技巧</strong>
+            <p style="font-size: 0.92rem; margin-top: 4px;">逆光点屏幕暗部提亮；拍倒影把手贴近水面；用网格线对齐建筑；人像模式拍器物更立体。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ 路线规划（带拍照提示）════ -->
+    <section id="route">
+      <div class="section-head">
+        <div>
+          <h2>按真实日期重排路线</h2>
+          <p class="hint">这版不是"把景点都塞进去"的攻略，而是"你们四个人真的能舒服走完"的攻略。新增 <span style="color: var(--gold);">金色提示条</span> 为拍照打卡指引。</p>
+        </div>
+        <span class="pill clay">6/18 周四 — 6/21 周日</span>
+      </div>
+
+      <article class="route-day">
+        <div class="day-label">
+          <span class="date">06/18 周四 · 到达夜</span>
+          <strong>高铁到站 + 入住 + 清淡夜宵</strong>
+          <p>第一晚不安排景点，只把落地做顺。</p>
+        </div>
+        <div class="timeline">
+          <div class="stop">
+            <div class="time">21:13</div>
+            <div>
+              <h3>抵达景德镇北站</h3>
+              <p>如果你们坐的是 G1410，公开时刻常见为深圳北 16:18 发、景德镇北 21:13 到。出站直接网约车/出租车，别理黑车。</p>
+              <div class="tags"><span class="pill">高铁到达</span><span class="pill warn">以12306为准</span></div>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">21:45</div>
+            <div>
+              <h3>入住陶溪川附近酒店</h3>
+              <p>建议提前和酒店确认 22:00 后入住、两间房尽量同楼层；四人行李多，别在到站夜租电驴。</p>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">22:15</div>
+            <div>
+              <h3>清淡夜宵 / 便利店补给</h3>
+              <p>广东胃第一晚别硬冲大排档。可选汤包、肉片汤、鸡汤面、便利店酸奶水果；如果点外卖，备注"不辣、不要辣椒油、少油"。</p>
+            </div>
+          </div>
+          <div class="note">第一晚早点睡。第二天博物馆和御窑都吃体力，别把旅行开局变成夜宵修罗场。</div>
+        </div>
+      </article>
+
+      <article class="route-day">
+        <div class="day-label">
+          <span class="date">06/19 周五 · 主线 Day 1</span>
+          <strong>陶瓷博物馆 → 御窑陶阳里 → 陶溪川夜市</strong>
+          <p>周五晚上正好赶上陶溪川创意集市红利。下午到傍晚是今天摄影的黄金窗口。</p>
+        </div>
+        <div class="timeline">
+          <div class="stop">
+            <div class="time">08:15</div>
+            <div>
+              <h3>早餐：诚信油条 / 汤包 / 鸡汤面</h3>
+              <p>早餐别吃太辣：油条包麻糍、汤包、肉片汤、鸡汤面都更适合广东胃。冷粉可以尝，但务必不放辣椒油。</p>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">09:20</div>
+            <div>
+              <h3>景德镇中国陶瓷博物馆</h3>
+              <p>免费但必须预约。建议进馆后先上高层看"无语佛"等热门展品，再从上往下看陶瓷史，避开一点人流。</p>
+              <div class="tags"><span class="pill free">免费</span><span class="pill clay">提前预约</span><span class="pill">约2.5小时</span></div>
+              <div class="photo-tip">
+                <strong>📸 拍照攻略</strong>
+                先上 6 楼排队拍"无语佛"（沉思罗汉），趁人少先拍完再逛。出来顺路去中庭拍旋转楼梯，仰拍俯拍都好看。展厅内的陶瓷阵列墙用广角对称构图。
+              </div>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">12:20</div>
+            <div>
+              <h3>午餐：老城清淡小吃</h3>
+              <p>推荐肉片汤、汤包、韭菜馅饺子粑、鸡汤面。抚州弄可路过，不建议专门排长队；热门小吃街卫生和性价比波动大。</p>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">14:00</div>
+            <div>
+              <h3>陶阳里历史文化区 + 御窑博物院</h3>
+              <p>御窑建筑非常出片，下午到傍晚光线更柔。龙珠阁、红砖拱、遗址区按体力取舍；陶阳里票务和预约当天再确认。</p>
+              <div class="tags"><span class="pill clay">建议预约/购票</span><span class="pill">拍照核心</span><span class="pill">约3小时</span></div>
+              <div class="photo-tip">
+                <strong>📸 拍照攻略</strong>
+                这是整个行程最出片的景点。红砖拱券建筑从拱内往外拍人物剪影，下午光线穿过拱门。龙珠阁在水池边拍倒影，日落前后金色时刻最佳。御窑博物馆外的浅水池蓝调时刻拍建筑倒影。陶阳里老城小巷适合扫街风格的抓拍。
+              </div>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">18:00</div>
+            <div>
+              <h3>晚餐：赣菜轻体验</h3>
+              <p>如果去"回家吃饭/欧记/图味美/众诚田耕季"这类店，点菜先说不吃辣。优先汤、蒸、清炒、主食；小黄鱼浇汁、鸡脚、牛蛙、小炒类慎点。</p>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">19:30</div>
+            <div>
+              <h3>陶溪川文创街区 + 周五创意集市</h3>
+              <p>街区免费，周五晚上有市集氛围。原创手作适合慢看，不急着买大件；四个人可约定预算，避免"杯子越买越像开店"。</p>
+              <div class="tags"><span class="pill free">街区免费</span><span class="pill">周五夜市</span><span class="pill tea">适合情侣散步</span></div>
+              <div class="photo-tip">
+                <strong>📸 拍照攻略</strong>
+                赶在日落前后 15 分钟先拍红砖烟囱 + 暖黄灯光亮起的瞬间。水道倒影蹲低拍，两侧灯光反射会很漂亮。创意集市用 35mm 拍摊位全貌和摊主手作特写。
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="route-day">
+        <div class="day-label">
+          <span class="date">06/20 周六 · 主线 Day 2</span>
+          <strong>乐天市集 → 雕塑瓷厂 → 三宝村 → 陶阳新村</strong>
+          <p>这天是你们行程的"年轻景德镇"高光日。三宝村出片率极高，建议下午留够时间。</p>
+        </div>
+        <div class="timeline">
+          <div class="stop">
+            <div class="time">08:20</div>
+            <div>
+              <h3>打车到雕塑瓷厂，或租电驴出发</h3>
+              <p>周六早上人多，打车更省心；如果租电驴，建议四人各一辆，别两人共骑，戴头盔。</p>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">09:00</div>
+            <div>
+              <h3>乐天陶社创意市集 + 雕塑瓷厂</h3>
+              <p>乐天市集通常在周六上午，原创度高；门票/预约规则可能变，提前看公众号或平台。市集后继续逛雕塑瓷厂小店，货比三家。</p>
+              <div class="tags"><span class="pill clay">周六上午限定</span><span class="pill warn">票务需确认</span><span class="pill">约3小时</span></div>
+              <div class="photo-tip">
+                <strong>📸 拍照攻略</strong>
+                找二楼露台或高处俯拍市集顶棚和人流。蹲下用长焦拍摊主修坯/上釉的手。雕塑瓷厂老墙的瓷片拼贴做背景拍半身人像，蓝白瓷招牌也很有景德镇标识感。
+              </div>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">12:20</div>
+            <div>
+              <h3>午餐：众诚田耕季或清淡替代</h3>
+              <p>想吃攻略同款可去众诚田耕季雕塑瓷厂店，但必须强调"不辣"。更稳的清淡替代是肉片汤、汤包、鸡汤面。</p>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">14:00</div>
+            <div>
+              <h3>三宝村 / 三宝国际陶艺村</h3>
+              <p>用电驴或打车进村，三宝美术馆、陶艺工作室、咖啡馆、溪边小路边走边停。村路免费，展览/体验/咖啡另付。</p>
+              <div class="tags"><span class="pill free">公共区域免费</span><span class="pill tea">电驴友好</span><span class="pill">约3小时</span></div>
+              <div class="photo-tip">
+                <strong>📸 拍照攻略</strong>
+                三宝出片率极高。三宝美术馆外墙的藤蔓老窑砖是标志性背景。溪边石桥用手机丝绢流水模式拍流水雾化。村路沿路的陶罐墙做背景拍全身照。开放式工作室门口先打招呼再拍氛围照。下午光线柔和很适合情侣互拍。
+              </div>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">17:30</div>
+            <div>
+              <h3>回酒店休息 / 放战利品</h3>
+              <p>四个人都买瓷器的话，先回酒店卸货。易碎物不要一路背去夜市，不然人会变沉默。</p>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">19:30</div>
+            <div>
+              <h3>陶阳新村 / 九集小镇二选一</h3>
+              <p>陶阳新村适合买便宜小物、手串、杯子；九集小镇更像热闹夜市。</p>
+              <div class="tags"><span class="pill clay">淘货</span><span class="pill">砍价</span><span class="pill warn">少吃辣</span></div>
+            </div>
+          </div>
+          <div class="note">周六不建议再塞瑶里/寒溪：会直接牺牲乐天市集和三宝村，而这两个更符合你们"年轻市集 + 情侣慢逛"的需求。</div>
+        </div>
+      </article>
+
+      <article class="route-day">
+        <div class="day-label">
+          <span class="date">06/21 周日 · 返程半日</span>
+          <strong>古窑快线 / 补买瓷器 → 景德镇北返程</strong>
+          <p>13:00 左右返程，只做市区轻量内容。</p>
+        </div>
+        <div class="timeline">
+          <div class="stop">
+            <div class="time">08:20</div>
+            <div>
+              <h3>早餐 + 退房寄存行李</h3>
+              <p>吃清淡早餐，把行李寄存在酒店前台。提前确认打车到景德镇北大约需要多久，周末留足缓冲。</p>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">09:00</div>
+            <div>
+              <h3>方案 A：古窑民俗博览区快线</h3>
+              <p>如果你们还想补传统制瓷工艺，古窑最合适。只看核心窑炉、作坊和非遗展示，不做拉坯体验，10:50 左右撤。</p>
+              <div class="tags"><span class="pill clay">收费景区</span><span class="pill">约1.5–2小时</span></div>
+              <div class="photo-tip">
+                <strong>📸 拍照攻略</strong>
+                抓拍非遗传承人拉坯/修坯的瞬间（不要开闪光灯）。窑炉内部逆光拍光束效果，半成品晾晒架用长焦拍阵列感。
+              </div>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">09:30</div>
+            <div>
+              <h3>方案 B：二刷陶溪川 / 陶阳新村补买</h3>
+              <p>如果前两天买瓷器还没尽兴，周日上午就近补买更轻松。别买太大件，除非店家能打包邮寄。</p>
+              <div class="tags"><span class="pill free">轻松版</span><span class="pill tea">不赶路</span></div>
+            </div>
+          </div>
+          <div class="stop">
+            <div class="time">11:10</div>
+            <div>
+              <h3>回酒店取行李，打车去景德镇北</h3>
+              <p>按 13:00 左右发车，建议 12:05–12:15 到站；如果 12306 显示 12:53 发车，就把所有时间再提前 10 分钟。</p>
+              <div class="tags"><span class="pill warn">不要卡点</span><span class="pill">返深</span></div>
+            </div>
+          </div>
+          <div class="note">周日不安排瑶里/寒溪/瓷宫：远郊往返不稳定，13:00 返程会很悬。</div>
+        </div>
+      </article>
+    </section>
+
+    <section id="choice">
+      <div class="section-head">
+        <div><h2>瑶里、寒溪、瓷宫怎么取舍</h2><p class="hint">小红书那版 Day 3 很好看，但它默认你晚上走或多住一晚；你们周日 13:00 返程，不适合照搬。</p></div>
+        <span class="pill warn">主线不安排远郊</span>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>主推：不去远郊，保留市区精华</h3>
+          <p>你们这次刚好覆盖周五陶溪川、周六乐天市集，这两个时间窗口更难得。瑶里和寒溪适合下次多留半天再去。</p>
+          <ul>
+            <li>保留：陶瓷博物馆、御窑、陶溪川、乐天、雕塑瓷厂、三宝、古窑。</li>
+            <li>放弃：瑶里、寒溪、瓷宫、浮梁古县衙。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>如果四个人非常想看茶山古镇</h3>
+          <p>只能把 06/20 周六改成包车远郊线：瑶里古镇 → 寒溪村/大地之灯 → 瓷宫 → 回市区。代价是放弃乐天市集、三宝村和陶阳新村。</p>
+          <ul>
+            <li>适合：特别想拍自然风光、对市集兴趣一般。</li>
+            <li>不适合：想淘瓷、想看年轻创作、想轻松买买逛逛。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="matrix">
+      <div class="section-head">
+        <div><h2>景点红黑榜：按你们这次行程排序</h2><p class="hint">按"6/18 晚到、6/21 午走、两对情侣、广东胃、首刷景德镇"的优先级。</p></div>
+      </div>
+      <table class="matrix">
+        <thead>
+          <tr><th>景点</th><th>这次建议</th><th>理由</th><th>预约/费用/交通</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>中国陶瓷博物馆</td><td><span class="pill free">必去</span></td><td>首刷知识底座，"无语佛"和陶瓷史线都在这里。</td><td>免费；需预约；市区打车/电驴可达。</td></tr>
+          <tr><td>御窑博物院 + 陶阳里</td><td><span class="pill">必去</span></td><td>建筑、遗址、蓝调时刻和老城夜景都很适合情侣拍照。</td><td>提前看票务/预约；建议周五下午到傍晚。</td></tr>
+          <tr><td>陶溪川</td><td><span class="pill free">必去</span></td><td>你们周五、周六都在，正好吃到创意集市时间。</td><td>街区免费；周五/周六/周日及节假日市集更热闹。</td></tr>
+          <tr><td>乐天市集 + 雕塑瓷厂</td><td><span class="pill clay">必去</span></td><td>06/20 是周六，刚好能逛周六上午限定市集。</td><td>乐天票务/预约可能变化；雕塑瓷厂公共区域通常免费。</td></tr>
+          <tr><td>三宝村</td><td><span class="pill tea">推荐</span></td><td>山谷、工作室、咖啡、陶艺体验，很适合两对情侣慢逛。</td><td>公共区域免费；电驴/打车可达；体验另付。</td></tr>
+          <tr><td>古窑民俗博览区</td><td><span class="pill clay">周日可补</span></td><td>看传统制瓷工艺最直观，但你们时间紧，只适合周日快线。</td><td>收费；别做耗时体验；打车可达。</td></tr>
+          <tr><td>陶阳新村 / 九集小镇</td><td><span class="pill clay">晚上可选</span></td><td>陶阳新村适合低价小物，九集小镇偏热闹夜市。</td><td>公共区域免费；砍价；少吃重辣夜宵。</td></tr>
+          <tr><td>瑶里古镇</td><td><span class="pill warn">这次可不去</span></td><td>远，至少半天以上；周日 13:00 返程不现实。</td><td>适合包车日游；票务口径变化大。</td></tr>
+          <tr><td>寒溪村 / 大地之灯</td><td><span class="pill warn">这次可不去</span></td><td>茶山很出片，但和瑶里同属远郊，放在二刷更舒服。</td><td>通常免费；不建议电驴。</td></tr>
+          <tr><td>瓷宫</td><td><span class="pill warn">可不去</span></td><td>拍照打卡强，展陈深度一般；这次时间不值得专程。</td><td>多为收费；包车顺路 30–40 分钟即可。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="food">
+      <div class="section-head">
+        <div><h2>广东胃吃法：不辣也能玩景德镇</h2><p class="hint">江西菜的"微辣"有时候是广东人的"警报器"。</p></div>
+        <span class="pill warn">全程备注不辣</span>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <h3>更稳的清淡选择</h3>
+          <ul>
+            <li>建国肉片汤：汤水类更适合第一晚或早餐。</li>
+            <li>小毛汤包：相对友好，注意蘸料别加辣。</li>
+            <li>老白记卤子面：优先鸡汤面/清汤口味。</li>
+            <li>诚信油条：油条包麻糍，碳水快乐。</li>
+            <li>谭婆饺子粑：选韭菜馅，萝卜丝馅可能微辣。</li>
+            <li>季刻：本土饮品，适合作为不辣快乐补给。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>想吃攻略同款时</h3>
+          <ul>
+            <li>众诚田耕季：点牛肉贴饼、汤、青菜，反复说不辣。</li>
+            <li>回家吃饭/欧记/图味美：可以体验，但别点重辣招牌。</li>
+            <li>冷粉：让店家不放辣椒油、不放辣椒粉，陈皮可保留。</li>
+            <li>小黄鱼、鸡脚、牛蛙、小炒：容易偏辣，谨慎。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>直接给老板看的点菜卡</h3>
+          <div class="phrase">我们是广东人，完全不太能吃辣。不要辣椒、不要辣椒油、不要小米辣，麻烦做清淡一点；如果不能做不辣，辣椒单独放。</div>
+          <p style="margin-top: 12px;">这句话比"微辣"有用。景德镇的微辣，不一定微。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="booking">
+      <div class="section-head">
+        <div><h2>预约、免费、收费速查</h2><p class="hint">你们出发前一周就可以开始盯预约；周五周六人会比工作日多。</p></div>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <h3>务必提前看</h3>
+          <ul>
+            <li>中国陶瓷博物馆：免费预约，热门时段提前抢。</li>
+            <li>御窑博物院/陶阳里：票务、预约、夜场政策以官方为准。</li>
+            <li>乐天市集：周六上午，可能涉及购票/预约/限流。</li>
+            <li>陶艺体验：三宝或雕塑瓷厂工作室建议提前约。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>免费为主</h3>
+          <ul>
+            <li>中国陶瓷博物馆：免费但预约。</li>
+            <li>陶溪川街区/创意集市：公开信息为免费开放。</li>
+            <li>雕塑瓷厂公共区域：通常免费，乐天另看规则。</li>
+            <li>三宝村公共空间：免费，展览/体验/咖啡另付。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>收费/变动大</h3>
+          <ul>
+            <li>古窑民俗博览区：收费景区。</li>
+            <li>陶阳里核心区/御窑：常与陶阳里票务绑定。</li>
+            <li>瑶里：街巷与联票口径不同，别提前盲买。</li>
+            <li>瓷宫、浮梁古县衙、高岭相关景点：多为收费或联票。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="ebike">
+      <div class="section-head">
+        <div><h2>电动自行车怎么用</h2><p class="hint">市区好用，远郊别骑。四个人各骑各的，更安全也更自由。</p></div>
+        <span class="pill tea">建议只在 06/20 使用</span>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>适合电驴</h3>
+          <ul><li>陶溪川 ↔ 雕塑瓷厂</li><li>雕塑瓷厂 ↔ 三宝村</li><li>陶溪川 ↔ 陶阳里/御窑</li><li>陶溪川 ↔ 陶阳新村/九集小镇</li></ul>
+        </article>
+        <article class="card">
+          <h3>不适合电驴</h3>
+          <ul><li>景德镇北站到酒店：晚到、有行李，打车。</li><li>瑶里、寒溪村、瓷宫：远郊县道/山路，包车。</li><li>雨天、夜间三宝返程：打车更稳。</li><li>两人共骑：不安全，也可能不合规。</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="sources">
+      <div class="section-head">
+        <div><h2>信息来源与核验口径</h2><p class="hint">铁路和景区政策变动快，出发前一天再用 12306 与官方小程序复核。</p></div>
+      </div>
+      <div class="card">
+        <ul class="source-list">
+          <li><a href="https://www.liecheba.com/guangdong/shenzhenbei.html">深圳北列车时刻公开查询</a></li>
+          <li><a href="https://tw.trip.com/trains/china/route/shenzhen-north-to-jingdezhen/">Trip.com：深圳北至景德镇北 G1410 参考</a></li>
+          <li><a href="https://jdz.gov.cn/zwzx/jrcd/t919179.shtml">景德镇市人民政府：陶溪川创意集市开放信息</a></li>
+          <li><a href="https://jdz.gov.cn/zwzx/jrcd/t1051135.shtml">景德镇市人民政府：御窑博物馆预约方式</a></li>
+          <li><a href="https://govt.chinadaily.com.cn/s/202104/15/WS6077ba81498e7a02c6f6acce/jingdezhen-china-ceramics-museum.html">China Daily：中国陶瓷博物馆免费开放参考</a></li>
+          <li><a href="https://pws-hub.com/creative-market/">The Pottery Workshop：乐天/陶社创意市集信息</a></li>
+          <li><a href="https://www.weather.com.cn/weathern/101240801.shtml">中国天气网：景德镇天气预报</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      第二版 · 新增拍照打卡指南。最后更新：2026-06-15。路线按 2026-06-18 周四晚到、2026-06-21 周日 13:00 左右返程设计。
+    </footer>
+  </main>
+</body>
+</html>
